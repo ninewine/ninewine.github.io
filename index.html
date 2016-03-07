@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>Rocket Alarm</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css"/>
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row text-center bar1">
+    <!--.col-lg-12.col-xs-12-->
+    <div class="col-lg-12 col-xs-12">
+      <img src="./assets/image/logo-top.png" alt="" class="logo-top"/>
+    </div>
+
+    <div class="col-lg-12 col-xs-12">
+      <p>火箭闹钟·工具应用的美学革命</p>
+      <h1>社区化交互提醒，全生活场景覆盖</h1>
+      <p>每天醒来，世界都不同</p>
+      <div class="btn btn-download" onclick="javascript:redirectDependOnOS();">
+        立即下载
+      </div>
+      <p style="margin-top: 10px; font-size: 10px">iOS / Android</p>
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <h1>最美闹钟</h1>
+      <div class="line"></div>
+      <p>可能是最美第三方闹钟应用</p>
+      <p>工具应用的美学革命</p>
+      <img src="./assets/image/pic1.jpg" alt="" style="margin-top: 50px" class="img-responsive"/>
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <h1>全新界面</h1>
+      <div class="line"></div>
+      <p>残忍又小清新的闹钟</p>
+      <p>让你再也不迟到</p>
+      <img src="./assets/image/pic2.jpg" alt="" style="margin-top: 50px" class="img-responsive"/>
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <h1>社区化交互提醒</h1>
+      <div class="line"></div>
+      <p>给好友设置闹钟提醒</p>
+      <p>加入社交群组和话题小组，一起探索更多</p>
+      <img src="./assets/image/pic3.jpg" alt="" style="margin-top: 50px" class="img-responsive"/>
+    </div>
+  </div>
+  <div class="row text-center bar3">
+    <div class="col-lg-12 col-xs-12">
+      <img src="./assets/image/pic4.png" alt="" class="img-responsive img-need-shrink"/>
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <h1>支持Apple Watch</h1>
+      <div class="line"></div>
+      <p>抬手之间，更强唤醒</p>
+      <p>相信我，在使用火箭闹钟之前，我是一个不折不扣的起床困难户</p>
+      <img src="./assets/image/pic5.jpg" alt="" style="margin-top: 50px" class="img-responsive"/>
+    </div>
+  </div>
+  <div class="row text-center bar4">
+    <div class="col-lg-12 col-xs-12">
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <h1>全新闹钟任务</h1>
+      <div class="line"></div>
+      <p>新增更多起床任务，更多趣味交互模式</p>
+      <p>让你再也不迟到</p>
+      <img src="./assets/image/pic7.jpg" alt="" style="margin-top: 50px" class="img-responsive"/>
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <h1>更多壁纸铃声</h1>
+      <div class="line"></div>
+      <p>让起床不再枯燥</p>
+      <p>邀请用户参与创作，与用户分享</p>
+      <img src="./assets/image/pic8.jpg" alt="" style="margin-top: 50px" class="img-responsive img-need-shrink"/>
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <div class="line"></div>
+      <img src="./assets/image/pic9.jpg" alt="" style="margin-top: 50px" class="img-responsive"/>
+    </div>
+  </div>
+  <div class="row text-center bar2">
+    <div class="col-lg-12 col-xs-12">
+      <div class="line"></div>
+      <p style="margin-top: 50px; margin-bottom: 0;font-size: 10px" onclick="window.location='http://www.miitbeian.gov.cn/'">黔ICP备 14000690号-3</p>
+      <p style="margin-top: 0px; font-size: 10px">Copyright© 2013 Timeline Inc. All rights reserved</p>
+    </div>
+  </div>
+</div>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/retina.min.js"></script>
+<script>
+  function redirectDependOnOS() {
+    var appstoreURL = 'https://itunes.apple.com/app/id705079162';
+    var androidAPK = 'http://www.rapp.tl/RocketAlarm-v1.0-Timeline-release.apk';
+    var url = 'https://itunes.apple.com/app/id705079162'
+    var ua = (navigator.userAgent || navigator.vendor || window.opera);
+    if (ua != null) {
+      var uaName = ua.toLowerCase();
+      if (/android/i.test(uaName)) {
+        url = androidAPK;
+      }
+      else {
+        if (/ip(hone|od)/i.test(uaName)) {
+          url = appstoreURL;
+        }
+      }
+    }
+    else {
+      url = appstoreURL;
+    }
+    window.location.href = url;
+  }
+
+</script>
+
+
+</body>
+</html>

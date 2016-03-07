@@ -1,0 +1,136 @@
+
+@font-face {
+  font-family: 'FZLTH';
+  src: url('../font/FZLTH.eot');
+  src:
+  url('../font/FZLTH.eot?#font-spider') format('embedded-opentype'),
+  url('../font/FZLTH.woff') format('woff'),
+  url('../font/FZLTH.ttf') format('truetype'),
+  url('../font/FZLTH.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FZLTXH';
+  src: url('../font/FZLTXH.eot');
+  src:
+  url('../font/FZLTXH.eot?#font-spider') format('embedded-opentype'),
+  url('../font/FZLTXH.woff') format('woff'),
+  url('../font/FZLTXH.ttf') format('truetype'),
+  url('../font/FZLTXH.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eeeeee;
+  color: #494949;
+}
+
+p {
+  font-family: "FZLTXH";
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: "FZLTXH";
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.container-fluid {
+}
+
+.line {
+  margin: 13px auto 13px auto;
+  background-color: #494949;
+  width: 25px;
+  height: 2px;
+}
+
+.bar1 {
+  color: white;
+  padding-bottom: 60px;
+  background: url(../image/bar-pic1.jpg) no-repeat center;
+}
+
+.bar1 h1 {
+  font-family: "FZLTH";
+}
+
+.bar2 {
+  margin-top: 40px;
+}
+
+.bar2 p{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.bar3 {
+  margin-top: 100px;
+  padding-bottom: 60px;
+  background: url(../image/bar-pic2.jpg) no-repeat top;
+}
+
+.bar4 {
+  margin-top: 100px;
+  padding-bottom: 60px;
+  background: url(../image/bar-pic3.jpg) no-repeat center;
+  height: 690px;
+}
+
+.bar3 img {
+  margin-top: 150px;
+}
+
+.logo-top {
+  margin-top: 90px;
+}
+
+.btn-download {
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+.btn-download:hover {
+  border: 1px solid #58a8b6;
+  color: #58a8b6;
+}
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .bar1 {
+    background-image: url(../image/bar-pic1@2x.jpg);
+    background-size: 1440px 510px;
+  }
+  .bar3 {
+    background-image: url(../image/bar-pic2@2x.jpg);
+    background-size: 1440px 683px;
+  }
+  .bar4 {
+    background-image: url(../image/bar-pic3@2x.jpg);
+    background-size: 1440px 689px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 23px;
+  }
+  .img-need-shrink {
+    width: 280px;
+  }
+}
